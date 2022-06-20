@@ -1,3 +1,6 @@
+# pré requis
+Install the Custom Vision SDK. Run:
+pip install --upgrade azure-cognitiveservices-vision-customvision
 # Create a dataframe with the image URLs
 df = spark.createDataFrame([
         ("https://raw.githubusercontent.com/Azure-Samples/cognitive-services-sample-data-files/master/ComputerVision/Images/objects.jpg", ),
