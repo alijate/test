@@ -1,0 +1,5 @@
+azure-mgmt-resource
+azure-mgmt-storage
+azure-identity
+requests>3.7,<3.10
+# L’application de fonction créée s’exécute sur Python version 3.9. Les versions 3.7 et 3.8 de Python sont également prises en charge par Azure Functions.
