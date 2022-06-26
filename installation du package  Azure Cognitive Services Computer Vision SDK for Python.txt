@@ -1,0 +1,3 @@
+#nstall the Azure Cognitive Services Computer Vision SDK for Python package with pip
+
+pip install azure-cognitiveservices-vision-computervision
