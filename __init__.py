@@ -10,4 +10,5 @@ import time
 from requests import get, post
 import os
 from collections import OrderedDict
+#Numpy : algèbre linéaire. Sera l interface de programmation des images. Le traitement peut être fait par des opérations matricielles mais aussi par des boucles (même si cela reste moins efficace)
 import numpy as np
