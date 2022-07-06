@@ -118,7 +118,7 @@ function fdl_traitement_connexion() {
     $pseudo = proteger_entree($co, trim($_POST['login']));            
     
     // création de la requête SQL
-    $sql = "SELECT etLogin, etNumero, etMotDePasse FROM etudiant WHERE etLogin = '{$pseudo}'";
+    $sql = "SELECT Login, Numero, MotDePasse FROM user WHERE Login = '{$pseudo}'";
 
     // envoi de la requête
     $res = $co->query($sql) or bd_erreur($co, $sql);
@@ -137,14 +137,14 @@ function fdl_traitement_connexion() {
     $res->free();
     
     // vérification du mot de passe 
-    if (! password_verify($_POST['password'], $tab['etMotDePasse'])) {
+    if (! password_verify($_POST['password'], $tab['MotDePasse'])) {
         // fermeture de la connexion à la base de données
         $co->close();
         return true; 
     }
     
     // enregistrement de la variable de session
-    $_SESSION['user'] = array('login' => $tab['etLogin'], 'numero' => $tab['etNumero']);
+    $_SESSION['user'] = array('login' => $tab['Login'], 'numero' => $tab['Numero']);
     
     // fermeture de la connexion à la base de données
     $co->close();
