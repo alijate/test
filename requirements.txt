@@ -1,3 +1,5 @@
+# La liste des packages permettant aux développeurs de travailler sur le même environnement virtuel.
+# La liste des packages pourrait évoluer au fur et à mesure d'ajout de nouvelles briques.
 azure-mgmt-resource
 azure-mgmt-storage
 azure-identity
